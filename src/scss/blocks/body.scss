@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #111;
+  background-color: transparent;
   font-family: sans-serif;
+  background-image: url(../../assets/images/bg-mobile.png);
+  background-repeat: no-repeat;
+  width: 375px;
+  height: 667px;
 }

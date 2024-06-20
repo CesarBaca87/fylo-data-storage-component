@@ -2,22 +2,50 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- PON UN FAVICON!!! -->
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
     <link rel="icon" type="image/svg+xml" href="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CAMBIA EL TITLE!!! -->
-    <title>Vite Template</title>
+    
+    <title>Fylo data storage component</title>
   </head>
   <body>
-    <div class="card">
-      <h1 class="title">Titulo Principal</h1>
-      <p class="paragraph">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nobis
-        eos magnam earum numquam dignissimos eveniet asperiores a, minus neque
-        quibusdam odio est in eaque tempora consequatur veniam similique libero?
-      </p>
-      <a class="card__button" href="#">Pincha aquí</a>
-    </div>
+    <main class="main">
+      <div class="box">
+        <img src="./assets/images/logo.svg" alt="logo fylo">
+        <div class="box__fylo box__fylo--container">
+          <div class="box__fylo box__fylo--box">
+            <img src="./assets/images/icon-document.svg" alt="document icon">
+          </div>
+          <div class="box__fylo box__fylo--box">
+            <img src="./assets/images/icon-folder.svg" alt="folder icon">
+          </div>
+          <div class="box__fylo box__fylo--box">
+            <img src="./assets/images/icon-upload.svg" alt="upload icon">
+          </div>
+        </div>
+      </div>
+
+      <div class="box__slider">
+        <span class="box__slider box__slider--text">You’ve used 815 GB of your storage</span>
+        <div class="box__slider box__slider--form"></div>
+        <div class="box__slider box__slider--container">
+          <span class="box__slider box__slider--data">0 GB</span>
+          <span class="box__slider box__slider--data">1000 GB</span>
+        </div>
+      </div>
+
+      <div class="box__info">
+        <div class="box__info box__info--container">
+          <span class="box__info box__info--number">185</span>
+          <span class="box__info box__info--text">GB LEFT</span>
+        </div>
+      </div>
+
+    </main>
+    
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>
