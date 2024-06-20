@@ -6,7 +6,7 @@ $breakpoints: (
   desktop: 1440px,
 );
 
-@mixin responsive($key) {
+@mixin resposive($key) {
   @if map-has-key($breakpoints, $key) {
     @media screen and (min-width: map-get($breakpoints, $key)) {
       @content;

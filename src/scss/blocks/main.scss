@@ -1,1 +1,17 @@
-
+@use '../mixins/resposive.scss' as *;
+.main{
+    position:relative;
+    width: 375px;
+    height: 667px;
+    background-color: var(--bg-box-icon);
+    background-image: url(../../assets/images/bg-mobile.png);
+    background-repeat: no-repeat ;
+    @include resposive(desktop){
+        position: absolute;
+        width: 1440px;
+        height: 800px;
+        top: 380px;
+        background-image: url(../../assets/images/bg-desktop.png);
+        background-repeat: no-repeat;
+    }
+}
